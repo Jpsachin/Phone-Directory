@@ -1,0 +1,11 @@
+body{
+        background-color:DarkSlateGrey;
+        border: 1px solid blue;
+    }
+.foo {
+    background-color: gray;
+    width: auto;
+    border: 5px solid lightgrey;
+    padding: 15px;
+    margin: 15px;
+}

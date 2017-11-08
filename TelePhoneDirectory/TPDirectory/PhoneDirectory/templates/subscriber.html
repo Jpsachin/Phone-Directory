@@ -1,0 +1,32 @@
+<html>
+<div style="overflow-x:auto;">
+   <form method='post'>
+        {% csrf_token %}
+        {{ form }}
+        <button type='submit' class='btn btn-primary' id='butn'>SHOW TABLES</button>
+    </form>    
+  <table>
+    <tr>
+      <th>First Name</th>
+     <!-- <th>Middle Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th> -->
+    </tr>
+    <tbody>
+        {% for user in Subscriber %}
+            <tr>
+                <td>{{user.f_name}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</div>
+</html>
